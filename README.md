@@ -105,7 +105,7 @@ Step 1: Ensure you have a web server running. You can use XAMPP, WAMP, or any lo
 
 Step 2: Open the project folder in your web server directory. The main file is index.html located in the fb_graph folder.
 
-Step 3: Open your web browser and navigate to the project URL. For XAMPP, this would typically be http://localhost/moi/by group/fb_graph/index.html or similar depending on your server configuration.
+Step 3: Open your web browser and navigate to the project URL. 
 
 Step 4: Obtain a Facebook access token. You can get this from the Facebook Graph API Explorer at https://developers.facebook.com/tools/explorer or by creating a Facebook App and generating an access token with the required permissions including user_profile, user_posts, and user_photos.
 
@@ -116,25 +116,18 @@ Step 6: Click the Fetch Profile button to retrieve and display your profile info
 Step 7: The results will be displayed below the input section. If there are any errors, they will be shown in a red error message box with appropriate error messages for different error codes.
 
 ## Screenshots Included
+<img width="1798" height="951" alt="image" src="https://github.com/user-attachments/assets/47b59d0e-89b8-4617-9f6e-e36f7875622a" />
+<img width="1641" height="1001" alt="image" src="https://github.com/user-attachments/assets/c362083c-8ad8-4b30-815a-313ea7bb5c16" />
+<img width="943" height="942" alt="image" src="https://github.com/user-attachments/assets/c21e9867-aa1f-4f78-a822-689c115af12f" />
 
-Screenshot 1: Main interface showing the access token input field and three action buttons for fetching profile, posts, and photos data.
 
-Screenshot 2: Profile information display showing user ID, name, email, and profile picture in a clean card layout with proper spacing and typography.
-
-Screenshot 3: User posts display showing individual post cards with creation dates, message content, and engagement statistics including likes and comments counts in a grid layout.
-
-Screenshot 4: User photos display showing photo cards in a responsive grid layout with images and creation dates.
-
-Screenshot 5: Error message display showing how validation errors and API errors including 401, 403, 404, and 429 status codes are presented to the user in a user-friendly format.
-
-Screenshot 6: Loading state showing the button spinner animation that appears during API requests to prevent multiple submissions and provide user feedback.
 
 ## Members Listed & Roles
 
-API & Authentication Handler: Responsible for implementing Facebook Graph API integration, handling authentication with access tokens, managing API request functions, error handling for different HTTP status codes, and API response processing.
+-API & Authentication Handler: Moises Urbano
 
-JavaScript Logic / Data Processing: Responsible for implementing data processing functions, organizing code into modular functions, implementing input validation, handling empty results and error states, and managing data transformation for display.
+-JavaScript Logic / Data Processing: Moises Urbano
 
-UI & CSS Designer: Responsible for creating the Apple-inspired user interface design, implementing responsive CSS layouts, styling cards and dynamic DOM elements, creating loading animations, and ensuring visual consistency across all screen sizes.
+-UI & CSS Designer: Tyron Aromin & Angelo Mandasig
 
-GitHub & Documentation Manager: Responsible for creating and maintaining the README documentation, managing GitHub repository structure, documenting API endpoints and parameters, creating project documentation, and ensuring all project requirements are documented.
+-GitHub & Documentation Manager: John Alfred O. Ventura
