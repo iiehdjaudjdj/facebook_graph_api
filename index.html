@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Graph API</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="fb-graph-container">
+        <div class="fb-graph-header">
+            <h1 class="fb-graph-title">
+                <i class="bi bi-facebook"></i>
+                Facebook Graph API
+            </h1>
+        </div>
+
+        <div class="fb-graph-content">
+            <div class="fb-graph-section">
+                <div class="fb-graph-input-group">
+                    <label for="accessToken" class="fb-graph-label">
+                        <i class="bi bi-key"></i>
+                        Access Token
+                    </label>
+                    <input 
+                        type="text" 
+                        id="accessToken" 
+                        class="fb-graph-input" 
+                        placeholder="Paste your Facebook access token here"
+                    >
+                </div>
+
+                <div class="fb-graph-button-group">
+                    <button 
+                        id="fetchProfileBtn" 
+                        class="fb-graph-button fb-graph-button-primary"
+                    >
+                        <span class="fb-graph-button-text">Fetch Profile</span>
+                        <span class="fb-graph-button-loader" style="display: none;">
+                            <i class="bi bi-arrow-repeat"></i>
+                        </span>
+                    </button>
+                    <button 
+                        id="fetchPostsBtn" 
+                        class="fb-graph-button fb-graph-button-secondary"
+                    >
+                        <span class="fb-graph-button-text">Fetch Posts</span>
+                        <span class="fb-graph-button-loader" style="display: none;">
+                            <i class="bi bi-arrow-repeat"></i>
+                        </span>
+                    </button>
+                    <button 
+                        id="fetchPhotosBtn" 
+                        class="fb-graph-button fb-graph-button-tertiary"
+                    >
+                        <span class="fb-graph-button-text">Fetch Photos</span>
+                        <span class="fb-graph-button-loader" style="display: none;">
+                            <i class="bi bi-arrow-repeat"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <div id="profileSection" class="fb-graph-section fb-graph-section-hidden">
+                <div class="fb-graph-section-header">
+                    <h2 class="fb-graph-section-title">
+                        <i class="bi bi-person-circle"></i>
+                        Profile Information
+                    </h2>
+                </div>
+                <div id="profileContent" class="fb-graph-profile-content"></div>
+            </div>
+
+            <div id="postsSection" class="fb-graph-section fb-graph-section-hidden">
+                <div class="fb-graph-section-header">
+                    <h2 class="fb-graph-section-title">
+                        <i class="bi bi-file-post"></i>
+                        User Posts
+                    </h2>
+                </div>
+                <div id="postsContent" class="fb-graph-posts-content"></div>
+            </div>
+
+            <div id="photosSection" class="fb-graph-section fb-graph-section-hidden">
+                <div class="fb-graph-section-header">
+                    <h2 class="fb-graph-section-title">
+                        <i class="bi bi-images"></i>
+                        User Photos
+                    </h2>
+                </div>
+                <div id="photosContent" class="fb-graph-photos-content"></div>
+            </div>
+
+            <div id="errorMessage" class="fb-graph-error" style="display: none;"></div>
+        </div>
+
+        <div class="fb-graph-footer">
+            <p class="fb-graph-footer-text">
+                Powered by <a href="https://developers.facebook.com/docs/graph-api" target="_blank" class="fb-graph-footer-link">Facebook Graph API</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
